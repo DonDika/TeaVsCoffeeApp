@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+    <ImageView
+        android:id="@+id/cup_logo"
+        android:layout_width="206dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/cup_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="271dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/paytone_one"
+        android:text="@string/desc_about"
+        android:textAlignment="center"
+        android:textColor="#E40B0A0A"
+        app:layout_constraintEnd_toEndOf="@+id/cup_logo"
+        app:layout_constraintStart_toStartOf="@+id/cup_logo"
+        app:layout_constraintTop_toBottomOf="@+id/cup_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

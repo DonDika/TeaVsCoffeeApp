@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Dibungkus dengan <layout> karena menggunakan Data Binding-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Drawer Layout untuk Menu pada Action Bar
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.drawerlayout.widget.DrawerLayout>-->
+
+    <LinearLayout
+        android:id="@+id/layout_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!--navHostFragment-->
+        <!--Pembungkus dari semua fragment-->
+        <fragment
+            android:id="@+id/navhost_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
+
+        <!--Bottom Navigasi-->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bottom"
+            app:menu="@menu/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:itemTextColor="@color/bottomnav_style">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <!--Navigation Menu
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_gravity="start"
+            app:menu="@menu/overflow_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/nav_header">
+        </com.google.android.material.navigation.NavigationView>-->
+
+
+    </LinearLayout>
+</layout>

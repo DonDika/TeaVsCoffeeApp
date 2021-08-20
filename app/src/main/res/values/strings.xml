@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tea vs Coffee</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="questions">Apa yang kamu minum?</string>
+    <string name="desc_end">Selamat permainan selesai</string>
+    <string name="desc_about">Ini adalah game teh atau kopi sederhana untuk menebak apa minuman kesukaan kamu</string>
+
+
+</resources>

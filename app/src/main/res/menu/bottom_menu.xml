@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Mengatur Menu pada Bottom Menu-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/introFragment"
+        android:icon="@drawable/icon_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/quizFragment"
+        android:icon="@drawable/icon_quiz"
+        android:title="Quiz"/>
+
+    <item
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/icon_info"
+        android:title="About"/>
+
+</menu>
